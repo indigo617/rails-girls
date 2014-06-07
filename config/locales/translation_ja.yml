@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      idea: idea  #g
+
+    attributes:
+      idea:
+        description: 説明
+        name: 名前
+        picture: 写真

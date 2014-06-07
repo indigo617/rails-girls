@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t "activerecord.attributes.idea.name" %>:</strong>
+  <%= @idea.name %>
+</p>
+
+<p>
+  <strong><%= t "activerecord.attributes.idea.description" %>:</strong>
+  <%= @idea.description %>
+</p>
+
+<p>
+  <strong><%= t "activerecord.attributes.idea.picture" %>:</strong>
+  <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>
