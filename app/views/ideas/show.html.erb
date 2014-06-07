@@ -10,6 +10,7 @@
   <%= @idea.description %>
 </p>
 
+
 <p>
   <strong><%= t "activerecord.attributes.idea.picture" %>:</strong>
   <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
